@@ -1,17 +1,12 @@
 import React, { FC, useState } from 'react';
 import './Project.scss';
 import Detail from '../Detail/Detail';
+import '../../constants/index'
+import { PROJECTS_IMAGE } from '../../constants/data';
 
 interface ProjectProps {
   obj: any;
 }
-
-const loadImage = {
-  "Test1": require("../../assets/projectsImage/test.png"),
-  "Test2": require("../../assets/projectsImage/dbz.jpg"),
-  "Test3": require("../../assets/projectsImage/dbz.jpg"),
-  "Test4": require("../../assets/projectsImage/leventseleve.jpeg"),
-};
 
 const Project: FC<ProjectProps> = ({ obj }) => {
   const [hover, setHover] = useState(false);
@@ -23,7 +18,7 @@ const Project: FC<ProjectProps> = ({ obj }) => {
   };
 
   const title: string = obj.title;
-  const img = loadImage[title as keyof typeof loadImage];
+  const img = PROJECTS_IMAGE[title as keyof typeof PROJECTS_IMAGE];
   return (
     <div className="Project" onMouseEnter={onHover} onMouseLeave={onLeave}>
       <img src={img} alt="" width="100%" height="100%"/>
