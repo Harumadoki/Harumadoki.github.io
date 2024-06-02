@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> = () => {
         <li><a className='link' href="/projects">Projects</a></li>
       </ul>
       <div className="SocialNetwork">
-        <img src={require("../../assets/instagram.png")} alt="" width="50" height="50"/>
+        {/* <img src={require("../../assets/instagram.png")} alt="" width="50" height="50"/> */}
         <a href="https://www.linkedin.com/in/heritiana-rasoanaivo-241149158/" target="_blank" rel="noopener noreferrer"><input type='image' src={require("../../assets/linkedin.png")} alt="" width="50" height="50"/></a>
       </div>
     </div>

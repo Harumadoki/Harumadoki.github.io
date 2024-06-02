@@ -4,14 +4,15 @@ import './Detail.scss';
 interface DetailProps {
   tags: string[];
   title: string;
+  description: string;
 }
 
-const Detail: FC<DetailProps> = ({tags, title}) => {
+const Detail: FC<DetailProps> = ({tags, title, description}) => {
   return (
     <div className="Detail">
         {
           <div className='container'>
-            <p>{title}</p>
+            <p className='title'>{title}: {description}</p>
             <div className='tags-container'>{tags.map(x => <p className='tag'>{x}</p>)}</div>
           </div>
         }

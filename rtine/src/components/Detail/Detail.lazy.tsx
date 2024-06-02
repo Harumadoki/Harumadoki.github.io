@@ -4,7 +4,7 @@ const LazyDetail = lazy(() => import('./Detail'));
 
 const Detail = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
   <Suspense fallback={null}>
-    <LazyDetail tags={[]} title={''} {...props} />
+    <LazyDetail description={''} tags={[]} title={''} {...props} />
   </Suspense>
 );
 

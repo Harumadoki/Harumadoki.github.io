@@ -1,5 +1,9 @@
 .Project {
     position: relative;
     flex: 1 1 50%;
-    // height: 500px;
+    max-height: 700px; // À voir pour plus tard (spécifique à mes photos)
+
+    img {
+        object-fit: cover; // À voir pour plus tard (spécifique à mes photos) => ici crop la photo
+    }
 }
