@@ -2,6 +2,8 @@
     display: flex;
     margin: 0 10px;
     width: 100%;
+    font-family: 'Verdana', monospace, sans-serif;
+    // font-family: 'Brush Script MT', monospace;
     
     ul {
         display: flex;
@@ -16,5 +18,44 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        size: 10px;
+    }
+
+    h1 {
+        font-weight: 600;
+    }
+    
+    .link {
+        color: black;
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+        font-weight: 600;
+        &:hover {
+            background-color: blue;
+            border-radius: 1em;
+            color: white;
+        }
+        // &:visited {
+        //     text-decoration: none;
+        // }
+        // /* unvisited link */
+        // &:link {
+        //     text-decoration: none;
+        // }
+        
+        // /* visited link */
+        // &:visited {
+        //     text-decoration: none;
+        // }
+        
+        // /* mouse over link */
+        // &:hover {
+        //     color: hotpink;
+        // }
+        
+        // /* selected link */
+        // &:active {
+        //     text-decoration: none;
+        // }
     }
 }
