@@ -11,8 +11,9 @@ const Header: FC<HeaderProps> = () => {
     <div className="Header">
       <h1>Rtine</h1>
       <ul>
-        <li><a className='link' href="/about">About</a></li>
-        <li><a className='link' href="/projects">Projects</a></li>
+        <li><a className='link' href="#/about">About</a></li>
+        <li><a className='link' href="#/projects">Projects</a></li>
+        <li><a className='link' href="#/3dProjects">3D</a></li>
       </ul>
       <div className="SocialNetwork">
         {/* <img src={require("../../assets/instagram.png")} alt="" width="50" height="50"/> */}
