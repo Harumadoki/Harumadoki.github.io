@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
-import './Projects.scss';
-import Project from '../Project/Project';
-import '../../constants/index';
-import { PROJECTS } from '../../constants/data';
+import React, { FC } from "react";
+import "./Projects.scss";
+import Project from "../Project/Project";
+import "../../constants/index";
+import { PROJECTS } from "../../constants/data";
 
 interface ProjectsProps {}
 

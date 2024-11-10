@@ -1,17 +1,17 @@
-import React, { useEffect, useRef } from 'react';
-import './Gameboy3dModel.scss';
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { OrbitControls } from 'three-stdlib';
+import React, { useEffect, useRef } from "react";
+import "./Gameboy3dModel.scss";
+import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { OrbitControls } from "three-stdlib";
 
 const Gameboy3dModel: React.FC = () => {
   const refContainer = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {  
+  useEffect(() => {
     const parent = refContainer.current?.parentElement;
 
     if (!parent) {
-      console.error('Parent container not found');
+      console.error("Parent container not found");
       return;
     }
     const width = parent.clientWidth;
@@ -27,7 +27,7 @@ const Gameboy3dModel: React.FC = () => {
     if (refContainer.current) {
       refContainer.current.appendChild(renderer.domElement);
     } else {
-      console.error('refContainer is not defined');
+      console.error("refContainer is not defined");
     }
 
     // Set the background color to grey to help debug
@@ -51,7 +51,7 @@ const Gameboy3dModel: React.FC = () => {
         scene.add(model);
         model.position.set(0, 0, 0); // Position the model at the origin
         model.scale.set(1, 1, 1); // Adjust the scale as needed
-        console.log('Model loaded successfully:', model);
+        console.log("Model loaded successfully:", model);
 
         // Add bounding box helper to visualize the model's bounds
         const box = new THREE.BoxHelper(model, 0xff0000);
@@ -59,7 +59,7 @@ const Gameboy3dModel: React.FC = () => {
       },
       undefined,
       (error) => {
-        console.error('An error happened while loading the GLTF model', error);
+        console.error("An error happened while loading the GLTF model", error);
       }
     );
 
@@ -85,10 +85,10 @@ const Gameboy3dModel: React.FC = () => {
       renderer.setSize(window.innerWidth, window.innerHeight);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       if (refContainer.current) {
         refContainer.current.removeChild(renderer.domElement);
       }
