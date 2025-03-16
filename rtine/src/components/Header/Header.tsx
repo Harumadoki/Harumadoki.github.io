@@ -6,7 +6,7 @@ const Header = () => {
     <div className="Header">
       <h1>
         <Link className="logo-link" to="/projects">
-          Rtine
+          r.
         </Link>
       </h1>
       <ul>
@@ -17,8 +17,11 @@ const Header = () => {
         </li>
         <li>
           <Link className="link" to="/about">
-            About
+            Resume
           </Link>
+          {/* <Link className="link" to="/about">
+            About
+          </Link> */}
         </li>
         <li>
           <Link className="link" to="/3dProjects">
@@ -27,8 +30,11 @@ const Header = () => {
         </li>
         <li>
           <Link className="link" to="/Home">
-            Home
+            Wordle
           </Link>
+          {/* <Link className="link" to="/Home">
+            Home
+          </Link> */}
         </li>
       </ul>
       <div className="SocialNetwork">
