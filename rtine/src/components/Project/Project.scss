@@ -7,3 +7,16 @@
         object-fit: cover; // À voir pour plus tard (spécifique à mes photos) => ici crop la photo
     }
 }
+
+.animationTest {
+    // animation from bottom to top with opacity@
+    animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+

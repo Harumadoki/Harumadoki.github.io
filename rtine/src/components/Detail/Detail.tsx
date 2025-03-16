@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import './Detail.scss';
+import React, { FC } from "react";
+import "./Detail.scss";
 
 interface DetailProps {
   tags: string[];
@@ -7,18 +7,25 @@ interface DetailProps {
   description: string;
 }
 
-const Detail: FC<DetailProps> = ({tags, title, description}) => {
+const Detail: FC<DetailProps> = ({ tags, title, description }) => {
   return (
     <div className="Detail">
-        {
-          <div className='container'>
-            <p className='title'>{title}: {description}</p>
-            <div className='tags-container'>{tags.map(x => <p className='tag'>{x}</p>)}</div>
+      {
+        <div className="container">
+          <p className="title">
+            {title}: {description}
+          </p>
+          <div className="tags-container">
+            {tags.map((x) => (
+              <p key={x} className="tag">
+                {x}
+              </p>
+            ))}
           </div>
-        }
+        </div>
+      }
     </div>
   );
-
 };
 
 export default Detail;

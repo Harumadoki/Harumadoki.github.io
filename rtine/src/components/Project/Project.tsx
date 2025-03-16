@@ -4,11 +4,18 @@ import Detail from "../Detail/Detail";
 import "../../constants/index";
 import { PROJECTS_IMAGE } from "../../constants/data";
 
+interface Card {
+  title: string;
+  img: string;
+  tags: string[];
+  lien: string;
+  description: string;
+}
 interface ProjectProps {
-  obj: any;
+  obj: Card;
 }
 
-const Project: FC<ProjectProps> = ({ obj }) => {
+const Project = ({ obj }: ProjectProps) => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover(true);
@@ -17,14 +24,19 @@ const Project: FC<ProjectProps> = ({ obj }) => {
     setHover(false);
   };
 
-  const title: string = obj.title;
-  const description: string = obj.description;
-  const img = PROJECTS_IMAGE[title as keyof typeof PROJECTS_IMAGE];
+  const img = PROJECTS_IMAGE[obj.title as keyof typeof PROJECTS_IMAGE];
   return (
     <div className="Project" onMouseEnter={onHover} onMouseLeave={onLeave}>
       <img src={img} alt="" width="100%" height="100%" />
       {hover && (
-        <Detail tags={obj.tags} title={title} description={description} />
+        <div className="animationTest">
+          <Detail
+            key={obj.lien}
+            tags={obj.tags}
+            title={obj.title}
+            description={obj.description}
+          />
+        </div>
       )}
     </div>
   );
