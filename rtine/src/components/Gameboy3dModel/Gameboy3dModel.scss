@@ -1,1 +1,8 @@
-.Gameboy3dModel {}
+.Gameboy3dModel {
+    width: 80%;  /* Largeur complète de la fenêtre */
+    height: 80%; /* Hauteur complète de la fenêtre */
+    overflow: hidden; /* Empêche le débordement */
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -8,33 +8,28 @@ const Gameboy3dModel: React.FC = () => {
   const refContainer = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const parent = refContainer.current?.parentElement;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
 
-    if (!parent) {
-      console.error("Parent container not found");
-      return;
-    }
-    const width = parent.clientWidth;
-    const height = parent.clientHeight;
-
+    // Création de la scène
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 1000);
-    camera.position.set(0, 3, 5);
 
+    // Création de la caméra
+    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+    camera.position.set(0, 5, 10);
+
+    // Création du renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(width, height);
+    renderer.setPixelRatio(window.devicePixelRatio); // Pour meilleure qualité sur écrans HD
 
     if (refContainer.current) {
       refContainer.current.appendChild(renderer.domElement);
-    } else {
-      console.error("refContainer is not defined");
     }
 
-    // Set the background color to grey to help debug
-    scene.background = new THREE.Color(0xaaaaaa);
-    // scene.background = new THREE.Color(0xffffff);
+    scene.background = new THREE.Color("#0d0e10");
 
-    // Add lighting
+    // Ajout de la lumière
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(ambientLight);
 
@@ -42,47 +37,48 @@ const Gameboy3dModel: React.FC = () => {
     directionalLight.position.set(5, 5, 5);
     scene.add(directionalLight);
 
-    // Load the GLB model
+    // Chargement du modèle 3D
     const loader = new GLTFLoader();
     loader.load(
-      `${process.env.PUBLIC_URL}/gameboy.glb`, // Correct path to your .glb file in the public folder
+      `${process.env.PUBLIC_URL}/gameboy.glb`,
       (gltf) => {
         const model = gltf.scene;
         scene.add(model);
-        model.position.set(0, 0, 0); // Position the model at the origin
-        model.scale.set(1, 1, 1); // Adjust the scale as needed
-        console.log("Model loaded successfully:", model);
+        model.position.set(0, 0, 0);
+        model.scale.set(2, 2, 2); // Augmente la taille du modèle
 
-        // Add bounding box helper to visualize the model's bounds
-        const box = new THREE.BoxHelper(model, 0xff0000);
-        scene.add(box);
+        // const box = new THREE.BoxHelper(model, "#0d0e10");
+        // scene.add(box);
       },
       undefined,
       (error) => {
-        console.error("An error happened while loading the GLTF model", error);
+        console.error("Erreur lors du chargement du modèle :", error);
       }
     );
 
-    // Add OrbitControls to enable camera movement
+    // Ajout des contrôles interactifs
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true; // Enable damping (inertia)
-    controls.dampingFactor = 0.25; // Damping factor
-    controls.screenSpacePanning = true; // Allow panning in screen space
-    controls.maxPolarAngle = Math.PI / 2; // Limit the vertical angle
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.1;
+    controls.screenSpacePanning = false;
+    controls.maxPolarAngle = Math.PI / 2;
 
+    // Animation
     const animate = () => {
       requestAnimationFrame(animate);
-      controls.update(); // Required for damping to work
+      controls.update();
       renderer.render(scene, camera);
     };
 
     animate();
 
-    // Handle window resizing
+    // Gestion du redimensionnement de la fenêtre
     const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+      camera.aspect = newWidth / newHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(newWidth, newHeight);
     };
 
     window.addEventListener("resize", handleResize);

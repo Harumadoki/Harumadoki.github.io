@@ -7,7 +7,7 @@ interface ThreeDimensionalProjectsProps {}
 const ThreeDimensionalProjects: FC<ThreeDimensionalProjectsProps> = () => (
   <div className="ThreeDimensionalProjects">
     <div className="gameboy">
-      <h3>Gameboy</h3>
+      <h2>Gameboy</h2>
       <div className="gameboy-3dmodel">
         <Gameboy3dModel />
       </div>

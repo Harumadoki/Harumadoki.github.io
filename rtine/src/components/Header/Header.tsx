@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="Header">
       <h1>
-        <Link className="link" to="/projects">
+        <Link className="logo-link" to="/projects">
           Rtine
         </Link>
       </h1>
@@ -25,6 +25,11 @@ const Header = () => {
             3D
           </Link>
         </li>
+        <li>
+          <Link className="link" to="/Home">
+            Home
+          </Link>
+        </li>
       </ul>
       <div className="SocialNetwork">
         <a
@@ -34,7 +39,7 @@ const Header = () => {
         >
           <input
             type="image"
-            src={require("../../assets/linkedin.png")}
+            src={require("../../assets/linkedin_white.png")}
             alt=""
             width="50"
             height="50"

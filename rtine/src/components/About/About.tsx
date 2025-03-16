@@ -9,75 +9,78 @@ const About: FC<AboutProps> = () => (
     <div className="resume">
       <h2>RASOANAIVO Heritiana / Software developer</h2>
       <p>
-        <strong>Software Developer - Frontend -</strong> Omnilog - client TF1
+        <strong>Full Stack developer (Angular, .Net) -</strong> Omnilog
       </p>
       <p>
-        <em>Paris, France | September 2023 &ndash; October 2024</em>
+        <em>Paris, France | September 2023 - October 2024</em>
       </p>
-      <p>Tasks:</p>
+      <p>Client TF1:</p>
+      <p>&bull; TF1 is the number one TV channel in France</p>
       <p>
-        <span>&bull;&nbsp;</span>Developing an application for journalist that
-        indexes all previous articles,
+        &bull; Developed and maintained a web application enabling journalists
+        to
       </p>
-      <p>videos and documents of TF1 (React, Spring Boot)</p>
+      <p>research, edit, and share documents and videos (Angular, .NET)</p>
       <p>
-        <span>&bull;&nbsp;</span>E2E test with Cypress
+        &bull; Modernized an old thick-client application by transitioning it to
+        a thin-client
+      </p>
+      <p>web application</p>
+      <p>&bull; Troubleshot and resolved front-end and back-end issues</p>
+      <p>
+        &bull; Implemented key features, including HTML video manipulation and a
+        new
+      </p>
+      <p>form-based page in collaboration with the UX/UI team (Figma)</p>
+      <p>&bull; Refactored legacy code to align with SOLID principles</p>
+      <p>&bull; Developed and implemented a REST API</p>
+      <p>&bull; Deployed the project on AWS using Elastic Container Service</p>
+      <p>&bull; Conducted front-end testing with Cypress</p>
+      <p>
+        &bull; Contributed to the design system and collaborated with the UX
+        team to
+      </p>
+      <p>enhance the component library</p>
+      <p>
+        &bull; Worked within an Agile Scrumban framework (hybrid of Scrum and
+      </p>
+      <p>Kanban)</p>
+      <p>
+        &bull; Joined a team consisting of a project manager and two senior
+        developers.
       </p>
       <p>
-        <span>&bull;&nbsp;</span>Contribution with the design system / UX team
-        for a library
+        &bull; Assisted in the initial deployment of the application to early
+        users
       </p>
+
       <br />
+
       <p>
-        <strong>Software Developer - Full Stack -</strong> Sopra Steria - client
-        EDF
+        <strong>Full Stack developer (React, .Net) -</strong> Sopra Steria
       </p>
       <p>
-        <em>Lyon, France | September 2022 &ndash; January 2023</em>
+        <em>Lyon, France | October 2020 &ndash; January 2023</em>
       </p>
-      <p>Tasks:</p>
+      <p>Client Elengy:</p>
+      <p>&bull; Elengy specializes in Liquefied Natural Gas (LNG)</p>
+      <p>&bull; Developed and maintained a web application for managing and</p>
+      <p>calculating gas stock between clients and terminals in France</p>
       <p>
-        <span>&bull;&nbsp;</span>Developing and maintaining an application park
-        with high criticality
+        &bull; Led the project for six months, conducting client meetings to
+        discuss
       </p>
-      <p>(React / Spring Boot)</p>
+      <p>project evolution and demonstrating the application</p>
       <p>
-        <span>&bull;&nbsp;</span>Developing with the Agile method
+        &bull; Prepared quotations and technical specifications for requested
+        features
       </p>
+      <p>&bull; Modified data with SQL scripts</p>
       <p>
-        <span>&bull;&nbsp;</span>Understanding the domain of electricity
+        &bull; Mentor and guided an intern through various development tasks
       </p>
-      <br />
-      <p>
-        <strong>Software Developer - Full Stack -</strong> Sopra Steria - client
-      </p>
-      <p>Elengy</p>
-      <p>
-        <em>Lyon, France | September 2020 &ndash; September 2022</em>
-      </p>
-      <p>Tasks:</p>
-      <p>
-        <span>&bull;&nbsp;</span>Developing a solution for our client to manage
-        their structure
-      </p>
-      <p>(React / Spring Boot / SQL)</p>
-      <p>
-        <span>&bull;&nbsp;</span>Discussing with the client about the evolution
-        of the project
-      </p>
-      <p>
-        <span>&bull;&nbsp;</span>Preparing quotation about the evolution
-        requested by the client
-      </p>
-      <p>(conception)</p>
-      <p>
-        <span>&bull;&nbsp;</span>Responsibility of maintaining and developing
-        the application with the
-      </p>
-      <p>client (in team and alone)</p>
-      <p>
-        <span>&bull;&nbsp;</span>Respect the delay of a delivery
-      </p>
+      <p>&bull; Understood the context to add and modify calculation tables</p>
+      <p>&bull; Implemented a feature to download tables as PDFs</p>
     </div>
   </div>
 );

@@ -4,13 +4,19 @@
     width: 100%;
     height: 100%;
     justify-content: center;
-    .gameboy {
-        height: 500px;
-        width: 500px;
-        &-3dmodel {
-            height: 100%;
-            width: 100%;
-            border: rgb(61, 56, 56) solid 10px;
-        }
+    color: white;
+    // .gameboy {
+    //     height: 500px;
+    //     width: 500px;
+    //     &-3dmodel {
+    //         height: 100%;
+    //         width: 100%;
+    //         // border: rgb(61, 56, 56) solid 10px;
+    //     }
+    // }
+    h2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
