@@ -6,14 +6,17 @@ import ThreeDimensionalProjects from "../ThreeDimensionalProjects/ThreeDimension
 
 const Introduction = () => {
   return (
-    <div className="introduction">
+    <div className="introduction-content">
       <p>
-        I'm <strong>Heritiana Rasoanaivo</strong>. A Full Stack Developer with
-        experience in <strong>React, Angular, .NET</strong>. <br />I love
-        building web applications, solving complex problems, and working in{" "}
-        <strong>Agile teams</strong>. Currently based in <strong>Tokyo</strong>,
-        I'm always looking for new challenges and opportunities to grow. Let's
-        create something amazing together! 🚀
+        <div className="introduction-content-important">
+          I'm <strong>Heritiana Rasoanaivo</strong>, a french full stack
+          developer with more than three years of experience in{" "}
+          <strong>React, Angular, .NET</strong>.
+        </div>
+        <br /> <br />I love building web applications, solving complex problems,
+        and working in <strong>Agile teams</strong>. Currently based in{" "}
+        <strong>Abu Dhabi</strong>, I'm always looking for new challenges and
+        opportunities to grow. Let's create something amazing together! 🚀
       </p>
       <p>
         On this website, you can find my <strong>resume</strong> and explore the
@@ -32,12 +35,12 @@ const Introduction = () => {
 const Presentation = () => {
   return (
     <>
-      <Introduction />
+      <div className="introduction-container">
+        <Introduction />
+      </div>
       <Projects />
       <About />
-      <div style={{ backgroundColor: "black" }}>
-        <HomePage />
-      </div>
+      <HomePage />
       <ThreeDimensionalProjects />
     </>
   );

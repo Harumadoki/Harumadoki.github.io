@@ -11,6 +11,11 @@ const Header = () => {
       </h1>
       <ul>
         <li>
+          <Link className="link" to="/presentation">
+            Presentation
+          </Link>
+        </li>
+        <li>
           <Link className="link" to="/about">
             Resume
           </Link>
