@@ -7,16 +7,14 @@ import Wordle from "../Wordle/Wordle";
 const Introduction = () => {
   return (
     <div className="introduction-content">
+      <h1 className="test">RASOANAIVO HERITIANA</h1>
       <p>
-        <span className="introduction-content-important">
-          I'm <strong>Heritiana Rasoanaivo</strong>, a french full stack
-          developer with more than three years of experience in{" "}
-          <strong>React, Angular, .NET</strong>.
-        </span>
+        A french full stack developer with more than three years of experience
+        in <strong>React, Angular and .NET</strong>.
         <br /> <br />I love building web applications, solving complex problems,
         and working in <strong>Agile teams</strong>. Currently based in{" "}
         <strong>Abu Dhabi</strong>, I'm always looking for new challenges and
-        opportunities to grow. Let's create something amazing together! 🚀
+        opportunities to grow.
       </p>
       <p>
         On this website, you can find my <strong>resume</strong> and explore the
@@ -26,7 +24,7 @@ const Introduction = () => {
         This website is developed using <strong>React</strong> to showcase my
         work and experience!
         <br />
-        Let's create something amazing together! 🚀
+        Let's create something amazing together!
       </p>
     </div>
   );

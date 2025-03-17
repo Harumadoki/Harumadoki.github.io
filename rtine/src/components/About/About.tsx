@@ -24,12 +24,6 @@ const OtherPartsResume = () => {
         <li>Japanese: Daily conversational</li>
       </ul>
 
-      <h3>Interests</h3>
-      <ul>
-        <li>Volleyball (Competition)</li>
-        <li>Graphic Design</li>
-      </ul>
-
       <h3>Formation</h3>
       <p>
         <strong>Master Degree</strong> - Technology of Information and Web
