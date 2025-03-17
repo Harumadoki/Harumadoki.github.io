@@ -1,18 +1,18 @@
 import "./Presentation.scss";
 import About from "../About/About";
-import HomePage from "../HomePage/HomePage";
 import Projects from "../Projects/Projects";
 import ThreeDimensionalProjects from "../ThreeDimensionalProjects/ThreeDimensionalProjects";
+import Wordle from "../Wordle/Wordle";
 
 const Introduction = () => {
   return (
     <div className="introduction-content">
       <p>
-        <div className="introduction-content-important">
+        <span className="introduction-content-important">
           I'm <strong>Heritiana Rasoanaivo</strong>, a french full stack
           developer with more than three years of experience in{" "}
           <strong>React, Angular, .NET</strong>.
-        </div>
+        </span>
         <br /> <br />I love building web applications, solving complex problems,
         and working in <strong>Agile teams</strong>. Currently based in{" "}
         <strong>Abu Dhabi</strong>, I'm always looking for new challenges and
@@ -40,7 +40,7 @@ const Presentation = () => {
       </div>
       <Projects />
       <About />
-      <HomePage />
+      <Wordle />
       <ThreeDimensionalProjects />
     </>
   );

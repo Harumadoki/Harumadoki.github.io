@@ -1,11 +1,10 @@
-import "./HomePage.scss";
+import "./Wordle.scss";
 import testImage from "../../assets/screenCode/test.png";
 import wordleImage from "../../assets/screenCode/wordle.png";
 
-const HomePage = () => {
+const Wordle = () => {
   return (
-    // <div className="bg-container">
-    <div className="HomePage">
+    <div className="Wordle">
       <h2>Wordle Project</h2>
       <p className="wordle-intro">
         Welcome to my Wordle Project, a fun and interactive take on the popular
@@ -24,4 +23,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Wordle;

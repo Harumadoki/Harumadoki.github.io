@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 import About from "./components/About/About";
 import ThreeDimensionalProjects from "./components/ThreeDimensionalProjects/ThreeDimensionalProjects";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./components/HomePage/HomePage";
 import Presentation from "./components/Presentation/Presentation";
 import Contact from "./components/Contact/Contact";
+import Wordle from "./components/Wordle/Wordle";
 
 const Layout = () => {
   return (
@@ -44,8 +44,8 @@ const router = createBrowserRouter([
         element: <ThreeDimensionalProjects />,
       },
       {
-        path: "/Home",
-        element: <HomePage />,
+        path: "/wordle",
+        element: <Wordle />,
       },
       {
         path: "/presentation",

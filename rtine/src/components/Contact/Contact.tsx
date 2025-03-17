@@ -9,7 +9,7 @@ const Contact = () => {
         <p>
           <strong>📩 Get in Touch</strong> <br />
           <br />
-          <div className="content-secondary">
+          <span className="content-secondary">
             Feel free to reach out for collaboration, job opportunities, or just
             to chat about tech and development!
             <br /> <br />
@@ -23,7 +23,7 @@ const Contact = () => {
             >
               rasoanaivo heritiana
             </a>
-          </div>
+          </span>
         </p>
       </div>
     </div>
