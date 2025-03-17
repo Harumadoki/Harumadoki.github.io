@@ -8,15 +8,15 @@
     }
 }
 
-.animationTest {
-    // animation from bottom to top with opacity@
-    animation: slide-in 0.5s ease-in-out;
-}
+// .animationTest {
+//     // animation from bottom to top with opacity@
+//     animation: slide-in 0.5s ease-in-out;
+// }
 
-@keyframes slide-in {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-}
+// @keyframes slide-in {
+//     from {
+//         opacity: 0;
+//         transform: translateY(100%);
+//     }
+// }
 

@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import ThreeDimensionalProjects from "./components/ThreeDimensionalProjects/ThreeDimensionalProjects";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
+import Presentation from "./components/Presentation/Presentation";
 
 const Layout = () => {
   return (
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Projects />,
+        element: <Presentation />,
       },
       {
         path: "/about",
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/Home",
         element: <HomePage />,
+      },
+      {
+        path: "/presentation",
+        element: <Presentation />,
       },
     ],
   },

@@ -1,0 +1,13 @@
+.introduction {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    p {
+        // color: rgb(138, 138, 138);
+        font-size: clamp(18px,1.837vw,100px);
+        margin: 0% 5%;
+        text-align: justify;
+    }
+}

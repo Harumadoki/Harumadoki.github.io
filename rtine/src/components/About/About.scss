@@ -1,13 +1,47 @@
 .About {
-    margin-top: 5%;
-    text-align: justify;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    color: white;
-
-    .resume {
+    // background-color: black;
+    h2 {
+        margin-top: 6%;
+        text-align: center;
+        font-size: 80px;
+        color: white;
+    }
+    .resume-container {
+        margin-top: 5%;
+        text-align: justify;
+        width: 98%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
         font-size: large;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .resume-container {
+          grid-template-columns: 1fr; /* Switch to a single column */
+        }
+      }
+      
+    .resume-section {
+        // background-color: rgba(30, 28, 28, 0.4);
+        // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: larger;
+    }
+    .resume-section-other {
+        // background-color: rgba(30, 28, 28, 0.4);
+        // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        color: white;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        font-size: larger;
     }
 }

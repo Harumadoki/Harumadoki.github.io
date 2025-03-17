@@ -29,14 +29,12 @@ const Project = ({ obj }: ProjectProps) => {
     <div className="Project" onMouseEnter={onHover} onMouseLeave={onLeave}>
       <img src={img} alt="" width="100%" height="100%" />
       {hover && (
-        <div className="animationTest">
-          <Detail
-            key={obj.lien}
-            tags={obj.tags}
-            title={obj.title}
-            description={obj.description}
-          />
-        </div>
+        <Detail
+          key={obj.lien}
+          tags={obj.tags}
+          title={obj.title}
+          description={obj.description}
+        />
       )}
     </div>
   );

@@ -5,36 +5,35 @@ const Header = () => {
   return (
     <div className="Header">
       <h1>
-        <Link className="logo-link" to="/projects">
+        <Link className="logo-link" to="/presentation">
           r.
         </Link>
       </h1>
       <ul>
         <li>
-          <Link className="link" to="/projects">
-            Projects
-          </Link>
-        </li>
-        <li>
           <Link className="link" to="/about">
             Resume
           </Link>
-          {/* <Link className="link" to="/about">
-            About
-          </Link> */}
         </li>
         <li>
           <Link className="link" to="/3dProjects">
-            3D
+            Gameboy
           </Link>
         </li>
         <li>
           <Link className="link" to="/Home">
             Wordle
           </Link>
-          {/* <Link className="link" to="/Home">
-            Home
-          </Link> */}
+        </li>
+        <li>
+          <Link className="link" to="/projects">
+            Photos
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to="/projects">
+            Contact
+          </Link>
         </li>
       </ul>
       <div className="SocialNetwork">
