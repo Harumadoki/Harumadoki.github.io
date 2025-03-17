@@ -7,6 +7,7 @@ import ThreeDimensionalProjects from "./components/ThreeDimensionalProjects/Thre
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import Presentation from "./components/Presentation/Presentation";
+import Contact from "./components/Contact/Contact";
 
 const Layout = () => {
   return (
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/presentation",
         element: <Presentation />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

@@ -30,7 +30,7 @@ const Gameboy3dModel: React.FC = () => {
     scene.background = new THREE.Color("#0d0e10");
 
     // Ajout de la lumière
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1);
     scene.add(ambientLight);
 
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);

@@ -30,13 +30,13 @@ const Header = () => {
             Wordle
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="link" to="/projects">
             Photos
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link className="link" to="/projects">
+          <Link className="link" to="/contact">
             Contact
           </Link>
         </li>
