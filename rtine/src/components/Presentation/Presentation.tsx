@@ -3,6 +3,7 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 import ThreeDimensionalProjects from "../ThreeDimensionalProjects/ThreeDimensionalProjects";
 import Wordle from "../Wordle/Wordle";
+import { useEffect, useState } from "react";
 
 const Introduction = () => {
   return (
@@ -30,7 +31,7 @@ const Introduction = () => {
   );
 };
 
-const Presentation = () => {
+const DesktopPresentation = () => {
   return (
     <>
       <div className="introduction-container">
@@ -42,6 +43,31 @@ const Presentation = () => {
       <ThreeDimensionalProjects />
     </>
   );
+};
+
+const MobilePresentation = () => {
+  return (
+    <div className="mobile-container">
+      <div className="mobile-content">
+        <h1>Mobile version of the website currently in development.</h1>
+        <p>Please access the website via a desktop</p>
+      </div>
+    </div>
+  );
+};
+
+const Presentation = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return isMobile ? <MobilePresentation /> : <DesktopPresentation />;
 };
 
 export default Presentation;

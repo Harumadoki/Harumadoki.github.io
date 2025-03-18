@@ -1,7 +1,45 @@
+import { useEffect, useState } from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 
+const LINKS = [
+  {
+    redirect: "/presentation",
+    description: "Presentation",
+  },
+  {
+    redirect: "/about",
+    description: "Resume",
+  },
+  {
+    redirect: "/3dProjects",
+    description: "Gameboy",
+  },
+  {
+    redirect: "/wordle",
+    description: "Wordle",
+  },
+  {
+    redirect: "/contact",
+    description: "Contact",
+  },
+];
+
+// TODO: faire un const avec une list pour plus tard
+// TODO: Partager dans un store/context la variable isMobile (?) ou media queries
+// is Mobile used for the moment as long as the different css is not responsive
+
 const Header = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="Header">
       <h1>
@@ -9,38 +47,19 @@ const Header = () => {
           r.
         </Link>
       </h1>
-      <ul>
-        <li>
-          <Link className="link" to="/presentation">
-            Presentation
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to="/about">
-            Resume
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to="/3dProjects">
-            Gameboy
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to="/wordle">
-            Wordle
-          </Link>
-        </li>
-        {/* <li>
-          <Link className="link" to="/projects">
-            Photos
-          </Link>
-        </li> */}
-        <li>
-          <Link className="link" to="/contact">
-            Contact
-          </Link>
-        </li>
-      </ul>
+      {!isMobile && (
+        <ul>
+          {LINKS.map((link) => {
+            return (
+              <li key={link.redirect}>
+                <Link className="link" to={link.redirect}>
+                  {link.description}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      )}
       <div className="SocialNetwork">
         <a
           href="https://www.linkedin.com/in/heritiana-rasoanaivo-241149158/"
