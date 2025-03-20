@@ -16,7 +16,7 @@ const Gameboy3dModel: React.FC = () => {
 
     // Création de la caméra
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-    camera.position.set(0, 5, 10);
+    camera.position.set(5, 5, 1);
 
     // Création du renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true });
