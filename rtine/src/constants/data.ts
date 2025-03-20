@@ -24,7 +24,7 @@ export const PROJECTS = [
   {
     title: "Omnilog",
     img: "/rtine/src/assets/projectsImage/omnilog.png",
-    tags: ["Angular", ".NET", "AWS"],
+    tags: ["React", ".NET", "AWS"],
     lien: "lien2",
     description:
       "Develop and maintain a web application to help journalist to research, modify and share documents and videos",

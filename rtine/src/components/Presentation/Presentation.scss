@@ -15,7 +15,7 @@
         width: 70%;
 
         h1 {
-            font-size: 80px;
+            font-size: 4.5vw;
             color: white;
             text-align: center;
         }
@@ -25,6 +25,9 @@
             font-size: clamp(18px,1.837vw,100px);
             margin: 0% 5%;
             text-align: center;
+        }
+        @media (max-width: 768px) {
+            margin-top: 20%;
         }
     }
 }

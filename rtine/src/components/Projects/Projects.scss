@@ -1,5 +1,9 @@
 .Projects {
     margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 }

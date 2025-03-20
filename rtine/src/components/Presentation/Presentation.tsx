@@ -4,11 +4,12 @@ import Projects from "../Projects/Projects";
 import ThreeDimensionalProjects from "../ThreeDimensionalProjects/ThreeDimensionalProjects";
 import Wordle from "../Wordle/Wordle";
 import { useEffect, useState } from "react";
+import Contact from "../Contact/Contact";
 
 const Introduction = () => {
   return (
     <div className="introduction-content">
-      <h1 className="test">RASOANAIVO HERITIANA</h1>
+      <h1>RASOANAIVO HERITIANA</h1>
       <p>
         A french full stack developer with more than three years of experience
         in <strong>React, Angular and .NET</strong>.
@@ -41,6 +42,7 @@ const DesktopPresentation = () => {
       <About />
       <Wordle />
       <ThreeDimensionalProjects />
+      <Contact />
     </>
   );
 };
@@ -57,10 +59,11 @@ const MobilePresentation = () => {
 };
 
 const Presentation = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      // setIsMobile(window.innerWidth <= 768);
     };
 
     window.addEventListener("resize", handleResize);

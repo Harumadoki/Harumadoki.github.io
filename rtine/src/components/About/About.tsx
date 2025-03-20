@@ -37,7 +37,7 @@ const OtherPartsResume = () => {
 const SopraResume = () => {
   return (
     <div className="resume-section">
-      <h3>Sopra Steria - (React, .Net)</h3>
+      <h3>Sopra Steria</h3>
       <p>
         <strong>Lyon, France | October 2020 – January 2023</strong>
       </p>
@@ -71,7 +71,7 @@ const SopraResume = () => {
 const Omnilog_Resume = () => {
   return (
     <div className="resume-section">
-      <h3>Omnilog - (Angular, .Net)</h3>
+      <h3>Omnilog</h3>
       <p>
         <strong>Paris, France | September 2023 - October 2024</strong>
       </p>
@@ -82,7 +82,7 @@ const Omnilog_Resume = () => {
       <ul>
         <li>
           Developed and maintained a web application enabling journalists to
-          research, edit, and share documents and videos (Angular, .NET).
+          research, edit, and share documents and videos.
         </li>
         <li>
           Modernized an old thick-client application by transitioning it to a
