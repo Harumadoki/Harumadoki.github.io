@@ -32,7 +32,7 @@ const Introduction = () => {
   );
 };
 
-const DesktopVersion = () => {
+const Home = () => {
   return (
     <>
       <div className="introduction-container">
@@ -42,37 +42,11 @@ const DesktopVersion = () => {
       <About />
       <Wordle />
       <ThreeDimensionalProjects />
-      <Contact />
+      <div className="contact-container">
+        <Contact />
+      </div>
     </>
   );
-};
-
-const MobileVersion = () => {
-  return (
-    <div className="mobile-container">
-      <div className="mobile-content">
-        <h1>Mobile version of the website currently in development.</h1>
-        <p>Please access the website via a desktop</p>
-      </div>
-    </div>
-  );
-};
-
-const Home = () => {
-  // small to large phone: 1024px
-  const MOBILE_SIZE_MAX = 768;
-  // const [isMobile, setIsMobile] = useState(window.innerWidth <= MOBILE_SIZE_MAX);
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const handleResize = () => {
-      // setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return isMobile ? <MobileVersion /> : <DesktopVersion />;
 };
 
 export default Home;
