@@ -1,4 +1,4 @@
-import "./Presentation.scss";
+import "./Home.scss";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
 import ThreeDimensionalProjects from "../ThreeDimensionalProjects/ThreeDimensionalProjects";
@@ -32,7 +32,7 @@ const Introduction = () => {
   );
 };
 
-const DesktopPresentation = () => {
+const DesktopVersion = () => {
   return (
     <>
       <div className="introduction-container">
@@ -47,7 +47,7 @@ const DesktopPresentation = () => {
   );
 };
 
-const MobilePresentation = () => {
+const MobileVersion = () => {
   return (
     <div className="mobile-container">
       <div className="mobile-content">
@@ -58,8 +58,10 @@ const MobilePresentation = () => {
   );
 };
 
-const Presentation = () => {
-  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+const Home = () => {
+  // small to large phone: 1024px
+  const MOBILE_SIZE_MAX = 768;
+  // const [isMobile, setIsMobile] = useState(window.innerWidth <= MOBILE_SIZE_MAX);
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
@@ -70,7 +72,7 @@ const Presentation = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return isMobile ? <MobilePresentation /> : <DesktopPresentation />;
+  return isMobile ? <MobileVersion /> : <DesktopVersion />;
 };
 
-export default Presentation;
+export default Home;

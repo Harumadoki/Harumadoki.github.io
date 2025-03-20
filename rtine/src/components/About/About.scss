@@ -21,7 +21,7 @@
         padding: 20px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         .resume-container {
           grid-template-columns: 1fr; /* Switch to a single column */
         }
@@ -45,7 +45,7 @@
         font-size: larger;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         .resume-section, .resume-section-other {
             font-size: medium;
         }

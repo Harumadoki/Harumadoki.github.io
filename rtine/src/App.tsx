@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 import About from "./components/About/About";
 import ThreeDimensionalProjects from "./components/ThreeDimensionalProjects/ThreeDimensionalProjects";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Presentation from "./components/Presentation/Presentation";
+import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Wordle from "./components/Wordle/Wordle";
 
@@ -25,11 +25,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Presentation />,
+        element: <Home />,
       },
       {
-        path: "/presentation",
-        element: <Presentation />,
+        path: "/Home",
+        element: <Home />,
       },
       {
         path: "/about",
@@ -48,8 +48,8 @@ const router = createBrowserRouter([
         element: <Wordle />,
       },
       {
-        path: "/presentation",
-        element: <Presentation />,
+        path: "/Home",
+        element: <Home />,
       },
       {
         path: "/contact",

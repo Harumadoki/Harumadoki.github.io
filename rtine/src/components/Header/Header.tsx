@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const LINKS = [
   {
-    redirect: "/presentation",
-    description: "Presentation",
+    redirect: "/home",
+    description: "Home",
   },
   {
     redirect: "/about",
@@ -30,10 +30,14 @@ const LINKS = [
 // is Mobile used for the moment as long as the different css is not responsive
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  // small to large phone: 1024px
+  const MOBILE_SIZE_MAX = 1024;
+  const [isMobile, setIsMobile] = useState(
+    window.innerWidth <= MOBILE_SIZE_MAX
+  );
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= MOBILE_SIZE_MAX);
     };
 
     window.addEventListener("resize", handleResize);
@@ -43,7 +47,7 @@ const Header = () => {
   return (
     <div className="Header">
       <h1>
-        <Link className="logo-link" to="/presentation">
+        <Link className="logo-link" to="/home">
           r.
         </Link>
       </h1>
