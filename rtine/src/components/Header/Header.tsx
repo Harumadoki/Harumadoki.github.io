@@ -8,10 +8,6 @@ const LINKS = [
     description: "Home",
   },
   {
-    redirect: "/about",
-    description: "Resume",
-  },
-  {
     redirect: "/tf1",
     description: "TF1",
   },
@@ -23,10 +19,6 @@ const LINKS = [
     redirect: "/3dProjects",
     description: "Gameboy",
   },
-  // {
-  //   redirect: "/wordle",
-  //   description: "Wordle",
-  // },
   {
     redirect: "/contact",
     description: "Contact",
