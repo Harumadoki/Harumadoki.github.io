@@ -1,0 +1,152 @@
+[
+  {
+    "id": "tf1",
+    "company": "Omnilog - TF1",
+    "title": "Full Stack Developer",
+    "description": "TF1 is one of the leading television networks in France, providing a wide range of content including news, entertainment, and sports. As a Full Stack Developer, I contributed to the development of internal tools that helped journalists and documentalists manage and retrieve video content efficiently.",
+    "sections": [
+      {
+        "title": "Team Structure",
+        "items": [
+          "3 Developers (1 Back-end, 2 Front-end) – Despite the role distinctions, we handled full-stack responsibilities as needed.",
+          "1 Project Manager – Managed planning, coordination, and progress tracking.",
+          "DevOps Team – Assisted in deploying our work across various TF1 applications."
+        ]
+      },
+      {
+        "title": "Agile Workflow",
+        "items": [
+          "Sprint Duration: 2 weeks",
+          "Daily stand-ups",
+          "Sprint planning",
+          "Sprint reviews",
+          "Sprint retrospectives",
+          "Refinement sessions"
+        ]
+      },
+      {
+        "title": "Application’s Purpose",
+        "items": [
+          "Video Documentation: Adding descriptions, metadata, and categorization.",
+          "Collaboration Tools: Enabling team members to share and send videos for new article creation.",
+          "Video Indexation: Implementing a structured process for adding and approving new video elements.",
+          "Social Media Integration: A newly developed feature allowing sources from social networks to be integrated and validated by the team."
+        ]
+      },
+      {
+        "title": "Key Contributions",
+        "subsections": [
+          {
+            "title": "Routing & Navigation",
+            "items": [
+              "Implemented redirection and modified routes, handling both static and dynamic parameters."
+            ]
+          },
+          {
+            "title": "UI & Front-End Development",
+            "items": [
+              "Developed multiple screens with user-specific functionalities.",
+              "Created custom HTML video functionalities to enhance video playback and management.",
+              "Designed and implemented a new note-taking page for repository management.",
+              "Built advanced filters and tag displays to enhance the research experience."
+            ]
+          },
+          {
+            "title": "API & Back-End Development",
+            "items": [
+              "Created APIs to retrieve structured data efficiently.",
+              "Developed a new social network integration module, handling data ingestion and moderation.",
+              "Implemented authentication management solutions."
+            ]
+          },
+          {
+            "title": "Cloud & DevOps Contributions",
+            "items": [
+              "Managed AWS data processing through API integrations.",
+              "Monitored and maintained Docker-based AWS infrastructure.",
+              "Deployed applications on AWS environments.",
+              "Led the initial launch of the application for first users."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elengy",
+    "title": "Full Stack Developer & Project Manager",
+    "company": "Sopra Steria – Elengy",
+    "description": "Elengy, a subsidiary of GRTgaz (rebranded as NaTran in January 2025), operates LNG terminals in France. Our team developed an application to manage gas transfers between Elengy and its customers, providing tools for both clients and internal management.",
+    "sections": [
+      {
+        "title": "Team & Duration",
+        "items": [
+          "First year: Team of three developers.",
+          "Final six months: Transitioned to project manager and sole developer."
+        ]
+      },
+      {
+        "title": "Project Management",
+        "items": [
+          "Agile-inspired workflow (not strictly Agile).",
+          "3-week sprints.",
+          "Pre-development phase: Design and cost estimation."
+        ]
+      },
+      {
+        "title": "Application’s Purpose",
+        "items": [
+          "Help Elengy’s clients track their gas stock and access contract-related data.",
+          "Assist Elengy in managing client contracts and monitoring gas reserves across their terminals."
+        ]
+      },
+      {
+        "title": "Project Leadership",
+        "items": [
+          "Coordinated client meetings to gather requirements and ensure alignment.",
+          "Produced detailed documentation and provided cost estimations for new developments.",
+          "Reported project progress to upper management.",
+          "Led the development of new features while overseeing the project.",
+          "Mentored and guided an intern, assisting with development tasks and best practices."
+        ]
+      },
+      {
+        "title": "Key Contributions",
+        "subsections": [
+          {
+            "title": "Feature Development",
+            "items": [
+              "Developed new pages displaying contract-specific data.",
+              "Implemented a data export feature, allowing users to download reports from the web client via a Blob file downloader."
+            ]
+          },
+          {
+            "title": "Performance Optimization",
+            "items": [
+              "Optimized page rendering by improving the efficiency of calculation tables, reducing load times."
+            ]
+          },
+          {
+            "title": "Code Quality & Best Practices",
+            "items": [
+              "Refactored the codebase to improve clarity and align with best practices."
+            ]
+          },
+          {
+            "title": "Business Logic & Data Management",
+            "items": [
+              "Analyzed gas industry business logic to modify and integrate custom calculation tables.",
+              "Provided SQL scripts to correct user-generated errors."
+            ]
+          },
+          {
+            "title": "Application Deployment & Coordination",
+            "items": [
+              "Ensured smooth application updates by coordinating between frontend, backend, and database teams."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

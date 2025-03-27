@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Wordle from "./components/Wordle/Wordle";
+import Experience from "./components/Experience/Experience";
 
 const Layout = () => {
   return (
@@ -34,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/tf1",
+        element: <Experience experienceId="tf1" />,
+      },
+      {
+        path: "/elengy",
+        element: <Experience experienceId="elengy" />,
       },
       {
         path: "/projects",

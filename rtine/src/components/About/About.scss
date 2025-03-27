@@ -1,54 +1,66 @@
 .About {
-    // background-color: black;
-    h2 {
-        margin-top: 10%;
-        text-align: center;
-        font-size: 4.5vw;
-        color: white;
+  // background-color: black;
+  h2 {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 4.5vw;
+    color: white;
+  }
+
+  .card-link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
+  }
+
+  .resume-container {
+    margin-top: 5%;
+    text-align: justify;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: large;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  @media (max-width: 1024px) {
     .resume-container {
-        margin-top: 5%;
-        text-align: justify;
-        width: auto;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        color: white;
-        font-size: large;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        padding: 20px;
+      grid-template-columns: 1fr; /* Switch to a single column */
     }
+  }
 
-    @media (max-width: 1024px) {
-        .resume-container {
-          grid-template-columns: 1fr; /* Switch to a single column */
-        }
-    }
-      
-    .resume-section {
-        background-color: rgba(41, 41, 41, 0.4);
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-        font-size: larger;
-    }
+  .resume-section {
+    background-color: rgba(41, 41, 41, 0.4);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: larger;
+  }
+  .resume-section-other {
+    // background-color: rgba(30, 28, 28, 0.4);
+    // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: larger;
+  }
+
+  @media (max-width: 1024px) {
+    .resume-section,
     .resume-section-other {
-        // background-color: rgba(30, 28, 28, 0.4);
-        // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-        color: white;
-        padding: 20px;
-        margin: 20px;
-        border-radius: 10px;
-        font-size: larger;
+      font-size: medium;
     }
-
-    @media (max-width: 1024px) {
-        .resume-section, .resume-section-other {
-            font-size: medium;
-        }
-    }
-    
+  }
 }

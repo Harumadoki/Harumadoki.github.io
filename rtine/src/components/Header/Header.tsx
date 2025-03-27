@@ -12,13 +12,21 @@ const LINKS = [
     description: "Resume",
   },
   {
+    redirect: "/tf1",
+    description: "TF1",
+  },
+  {
+    redirect: "/elengy",
+    description: "Elengy",
+  },
+  {
     redirect: "/3dProjects",
     description: "Gameboy",
   },
-  {
-    redirect: "/wordle",
-    description: "Wordle",
-  },
+  // {
+  //   redirect: "/wordle",
+  //   description: "Wordle",
+  // },
   {
     redirect: "/contact",
     description: "Contact",
