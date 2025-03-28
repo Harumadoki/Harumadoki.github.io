@@ -1,11 +1,13 @@
 .Project {
-    position: relative;
-    flex: 1 1 50%;
-    max-height: 700px; // À voir pour plus tard (spécifique à mes photos)
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex: 1 1 50%;
+  max-height: 700px; // À voir pour plus tard (spécifique à mes photos)
 
-    img {
-        object-fit: cover; // À voir pour plus tard (spécifique à mes photos) => ici crop la photo
-    }
+  //   img {
+  //     object-fit: cover; // À voir pour plus tard (spécifique à mes photos) => ici crop la photo
+  //   }
 }
 
 // .animationTest {
@@ -20,3 +22,8 @@
 //     }
 // }
 
+.image {
+  width: 100%;
+  height: 100%;
+  max-height: 50vh;
+}

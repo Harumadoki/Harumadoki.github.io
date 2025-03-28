@@ -49,6 +49,10 @@ const router = createBrowserRouter([
         element: <Projects />,
       },
       {
+        path: "/personal-projects",
+        element: <Projects isPersonal={true} />,
+      },
+      {
         path: "/3dProjects",
         element: <ThreeDimensionalProjects />,
       },

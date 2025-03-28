@@ -1,9 +1,28 @@
-.Projects {
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.Projects-grid {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    @media (max-width: 1024px) {
-        grid-template-columns: 1fr;
-    }
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.intro {
+  width: 100%;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 4vw;
+    color: white;
+    margin-top: 7%;
+  }
+  .projects-intro {
+    color: rgb(138, 138, 138);
+    font-size: clamp(18px, 1.837vw, 100px);
+    margin: 0% 5%;
+    text-align: justify;
+  }
 }

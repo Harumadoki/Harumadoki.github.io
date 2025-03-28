@@ -19,7 +19,6 @@ const Wordle = () => {
         <img alt="" src={wordleImage}></img>
       </div>
     </div>
-    // </div>
   );
 };
 

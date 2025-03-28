@@ -3,7 +3,6 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 import ThreeDimensionalProjects from "../ThreeDimensionalProjects/ThreeDimensionalProjects";
 import Wordle from "../Wordle/Wordle";
-import { useEffect, useState } from "react";
 import Contact from "../Contact/Contact";
 
 const Introduction = () => {
@@ -40,8 +39,9 @@ const Home = () => {
       </div>
       <Projects />
       <About />
-      <Wordle />
-      <ThreeDimensionalProjects />
+      {/* <Wordle /> */}
+      <Projects isPersonal={true} />
+      {/* <ThreeDimensionalProjects /> */}
       <div className="contact-container">
         <Contact />
       </div>

@@ -16,9 +16,14 @@ const LINKS = [
     description: "Elengy",
   },
   {
-    redirect: "/3dProjects",
-    description: "Gameboy",
+    redirect: "/personal-projects",
+    description: "Projects",
+    isPersonal: true,
   },
+  // {
+  //   redirect: "/3dProjects",
+  //   description: "Gameboy",
+  // },
   {
     redirect: "/contact",
     description: "Contact",
@@ -56,7 +61,11 @@ const Header = () => {
           {LINKS.map((link) => {
             return (
               <li key={link.redirect}>
-                <Link className="link" to={link.redirect}>
+                <Link
+                  className="link"
+                  to={link.redirect}
+                  state={link.isPersonal}
+                >
                   {link.description}
                 </Link>
               </li>
