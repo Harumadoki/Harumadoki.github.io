@@ -20,10 +20,6 @@ const LINKS = [
     description: "Projects",
     isPersonal: true,
   },
-  // {
-  //   redirect: "/3dProjects",
-  //   description: "Gameboy",
-  // },
   {
     redirect: "/contact",
     description: "Contact",

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./Experience.scss";
 import experiencesData from "../../data/experiences.json";
 
-type Experience = {
+type ExperienceType = {
   id: string;
   title: string;
   company: string;
@@ -26,7 +26,7 @@ type ExperienceProps = {
 };
 
 const Experience: React.FC<ExperienceProps> = ({ experienceId }) => {
-  const [experience, setExperience] = useState<Experience | null>(null);
+  const [experience, setExperience] = useState<ExperienceType | null>(null);
 
   useEffect(() => {
     setExperience(

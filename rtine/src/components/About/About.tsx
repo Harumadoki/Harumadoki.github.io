@@ -5,35 +5,35 @@ import { Link } from "react-router-dom";
 
 interface AboutProps {}
 
-const OtherPartsResume = () => {
-  return (
-    <div className="resume-section-other">
-      <h3>Skills</h3>
-      <ul>
-        <li>Frontend: React (JavaScript), Angular (TypeScript)</li>
-        <li>Backend: Java Spring Boot, .NET (C#)</li>
-        <li>Testing: Cypress, Jest</li>
-        <li>Database: SQL, DynamoDB</li>
-        <li>Version Control & DevOps: Git, AWS (ECS, etc.)</li>
-        <li>Methodologies: Agile (Scrum, Scrumban)</li>
-      </ul>
+// const OtherPartsResume = () => {
+//   return (
+//     <div className="resume-section-other">
+//       <h3>Skills</h3>
+//       <ul>
+//         <li>Frontend: React (JavaScript), Angular (TypeScript)</li>
+//         <li>Backend: Java Spring Boot, .NET (C#)</li>
+//         <li>Testing: Cypress, Jest</li>
+//         <li>Database: SQL, DynamoDB</li>
+//         <li>Version Control & DevOps: Git, AWS (ECS, etc.)</li>
+//         <li>Methodologies: Agile (Scrum, Scrumban)</li>
+//       </ul>
 
-      <h3>Languages</h3>
-      <ul>
-        <li>French: Native</li>
-        <li>English: Business (TOEIC 920)</li>
-        <li>Japanese: Daily conversational</li>
-      </ul>
+//       <h3>Languages</h3>
+//       <ul>
+//         <li>French: Native</li>
+//         <li>English: Business (TOEIC 920)</li>
+//         <li>Japanese: Daily conversational</li>
+//       </ul>
 
-      <h3>Formation</h3>
-      <p>
-        <strong>Master Degree</strong> - Technology of Information and Web
-        development
-      </p>
-      <p>Université Claude Bernard Lyon 1, Lyon France | 2016 -2021</p>
-    </div>
-  );
-};
+//       <h3>Formation</h3>
+//       <p>
+//         <strong>Master Degree</strong> - Technology of Information and Web
+//         development
+//       </p>
+//       <p>Université Claude Bernard Lyon 1, Lyon France | 2016 -2021</p>
+//     </div>
+//   );
+// };
 
 const SopraResume = () => {
   return (

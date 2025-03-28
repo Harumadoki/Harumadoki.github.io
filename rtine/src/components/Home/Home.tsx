@@ -1,8 +1,6 @@
 import "./Home.scss";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-import ThreeDimensionalProjects from "../ThreeDimensionalProjects/ThreeDimensionalProjects";
-import Wordle from "../Wordle/Wordle";
 import Contact from "../Contact/Contact";
 
 const Introduction = () => {
@@ -39,9 +37,7 @@ const Home = () => {
       </div>
       <Projects />
       <About />
-      {/* <Wordle /> */}
       <Projects isPersonal={true} />
-      {/* <ThreeDimensionalProjects /> */}
       <div className="contact-container">
         <Contact />
       </div>
