@@ -29,7 +29,7 @@ const Project = ({ obj, isPersonal }: ProjectProps) => {
   return (
     <div className="Project" onMouseEnter={onHover} onMouseLeave={onLeave}>
       <img className="image" src={img} alt="" />
-      {hover && (
+      {isPersonal && hover && (
         <Detail
           key={obj.lien}
           tags={obj.tags}
