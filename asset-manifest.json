@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f9641f0.css",
-    "main.js": "/static/js/main.e440055a.js",
+    "main.css": "/static/css/main.bada2b0b.css",
+    "main.js": "/static/js/main.c36cb1d6.js",
     "static/js/453.2e5c9e2a.chunk.js": "/static/js/453.2e5c9e2a.chunk.js",
+    "static/media/fs-feed.png": "/static/media/fs-feed.65d7871d9f347c9ca7d6.png",
+    "static/media/gameboy_screen.png": "/static/media/gameboy_screen.6805c43c48aa99e02e96.png",
     "static/media/test.png": "/static/media/test.5f111a3fedebe2c5fed9.png",
     "static/media/omnilog.png": "/static/media/omnilog.a94f5f26368b8f226d32.png",
     "static/media/wordle.png": "/static/media/wordle.8e4cb3f9cbe4258fc436.png",
     "index.html": "/index.html",
-    "main.0f9641f0.css.map": "/static/css/main.0f9641f0.css.map",
-    "main.e440055a.js.map": "/static/js/main.e440055a.js.map",
+    "main.bada2b0b.css.map": "/static/css/main.bada2b0b.css.map",
+    "main.c36cb1d6.js.map": "/static/js/main.c36cb1d6.js.map",
     "453.2e5c9e2a.chunk.js.map": "/static/js/453.2e5c9e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f9641f0.css",
-    "static/js/main.e440055a.js"
+    "static/css/main.bada2b0b.css",
+    "static/js/main.c36cb1d6.js"
   ]
 }
