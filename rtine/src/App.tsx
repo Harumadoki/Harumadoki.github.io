@@ -11,6 +11,7 @@ import Wordle from "./components/Wordle/Wordle";
 import Experience from "./components/Experience/Experience";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 import { useEffect, useState } from "react";
+import ProfessionalExperiences from "./components/ProfessionalExperiences/ProfessionalExperiences";
 
 const Layout = () => {
   return (
@@ -28,10 +29,6 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/home",
         element: <Home />,
       },
       {
@@ -71,8 +68,12 @@ const router = createBrowserRouter([
         element: <ProjectDetails experienceId="friendlySport" />,
       },
       {
+        path: "/professional-experiences",
+        element: <ProfessionalExperiences />,
+      },
+      {
         path: "*",
-        element: <Navigate to="/home" replace />,
+        element: <Navigate to="/" replace />,
       },
     ],
   },

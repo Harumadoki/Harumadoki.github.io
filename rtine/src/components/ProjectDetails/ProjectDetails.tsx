@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./ProjectDetails.scss";
-import experiencesData from "./test.json";
+import experiencesData from "./personalProjects.json";
 
 interface ExperienceType {
   id: string;

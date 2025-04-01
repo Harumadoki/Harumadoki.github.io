@@ -4,20 +4,16 @@ import { Link } from "react-router-dom";
 
 const LINKS = [
   {
-    redirect: "/home",
+    redirect: "/",
     description: "Home",
   },
   {
-    redirect: "/tf1",
-    description: "TF1",
-  },
-  {
-    redirect: "/elengy",
-    description: "Elengy",
+    redirect: "/professional-experiences",
+    description: "Professional experiences",
   },
   {
     redirect: "/personal-projects",
-    description: "Projects",
+    description: "Personal projects",
     isPersonal: true,
   },
   {
@@ -48,7 +44,7 @@ const Header = () => {
   return (
     <div className="Header">
       <h1>
-        <Link className="logo-link" to="/home">
+        <Link className="logo-link" to="/">
           r.
         </Link>
       </h1>

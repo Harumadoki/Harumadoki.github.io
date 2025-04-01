@@ -1,0 +1,15 @@
+.ProfessionalExperiences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.scrollable-experience {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .ProfessionalExperiences {
+    grid-template-columns: 1fr; /* Switch to a single column */
+  }
+}

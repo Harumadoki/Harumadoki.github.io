@@ -12,7 +12,7 @@ interface ProjectsProps {
 const ProjectsIntro = () => {
   return (
     <div className="intro">
-      <h2>Personal Projects: Creativity & Innovation</h2>
+      <h2>Creativity & Innovation</h2>
       <p className="projects-intro">
         This section is where I showcase the projects I’m currently developing,
         blending creativity with technology. From integrating a 3D Gameboy model
