@@ -60,3 +60,7 @@
 .fade-out {
   opacity: 0;
 }
+
+.main-screen {
+  transition: opacity 0.6s ease-in-out;
+}

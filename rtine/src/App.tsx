@@ -92,6 +92,20 @@ const IntroScreen = () => {
   );
 };
 
+const MainScreen = () => {
+  const [fade, setFade] = useState("fade-out");
+
+  useEffect(() => {
+    setTimeout(() => setFade("fade-in"), 0);
+  }, []);
+
+  return (
+    <div className={`main-screen ${fade}`}>
+      <RouterProvider router={router} />
+    </div>
+  );
+};
+
 const App = () => {
   const [showIntro, setShowIntro] = useState(true);
 
@@ -103,9 +117,7 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <>{showIntro ? <IntroScreen /> : <RouterProvider router={router} />}</>
-  );
+  return <>{showIntro ? <IntroScreen /> : <MainScreen />}</>;
 };
 
 export default App;
