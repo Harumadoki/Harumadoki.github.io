@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Wordle from "./components/Wordle/Wordle";
 import Experience from "./components/Experience/Experience";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
+import { useEffect, useState } from "react";
 
 const Layout = () => {
   return (
@@ -77,8 +78,34 @@ const router = createBrowserRouter([
   },
 ]);
 
+const IntroScreen = () => {
+  const [fade, setFade] = useState("fade-in");
+
+  useEffect(() => {
+    setTimeout(() => setFade("fade-out"), 200); // Start fade-out at 800ms
+  }, []);
+
+  return (
+    <div className={`intro-screen ${fade}`}>
+      <p className="logo">r.</p>
+    </div>
+  );
+};
+
 const App = () => {
-  return <RouterProvider router={router} />;
+  const [showIntro, setShowIntro] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowIntro(false);
+    }, 950); // Total duration (1s + fade-out time)
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <>{showIntro ? <IntroScreen /> : <RouterProvider router={router} />}</>
+  );
 };
 
 export default App;
