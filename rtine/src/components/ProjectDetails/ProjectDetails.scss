@@ -1,0 +1,62 @@
+.ProjectDetails {
+  margin-top: 10vh;
+  width: 100%;
+  height: 100%;
+  color: white;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: clamp(30px, 4vw, 80px);
+    text-align: center;
+  }
+
+  .introduction {
+    color: rgb(138, 138, 138);
+    font-size: clamp(18px, 1.8vw, 25px);
+    margin: 0% 5% 2% 5%;
+    text-align: justify;
+  }
+  .sections {
+    background-color: #e5e7eb;
+    color: black;
+    padding: 1%;
+    .section {
+      margin: 1%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1%;
+      // color: black;
+      // background-color: white;
+      .description {
+        padding: 2%;
+        text-align: justify;
+        background-color: rgba(208, 206, 206, 0.493);
+        border-radius: 10px;
+        h3 {
+          //   font-size: 3vw;
+          font-size: 2rem;
+        }
+
+        p {
+          //   font-size: 1.5vw;
+          font-size: clamp(18px, 1.8vw, 25px);
+          // color: rgb(138, 138, 138);
+          // color: black;
+          color: rgb(126, 126, 126);
+        }
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+    @media (max-width: 1024px) {
+      .section {
+        grid-template-columns: 1fr; /* Switch to a single column */
+      }
+    }
+  }
+}

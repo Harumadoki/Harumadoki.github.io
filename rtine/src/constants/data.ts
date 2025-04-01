@@ -35,8 +35,7 @@ export const PERSONAL_PROJECTS = [
     title: "FriendlySport",
     img: "/rtine/src/assets/projectsImage/sopra.png",
     tags: ["React Native", "Firebase"],
-    // lien: "https://www.soprasteria.com/home",
-    lien: "",
+    lien: "/friendlysport",
     description:
       "Creation of a friendly fitness tracker to share with your friends",
   },
@@ -51,7 +50,7 @@ export const PERSONAL_PROJECTS = [
 
 export const PERSONAL_PROJECTS_IMAGE = {
   // Wordle: require("../assets/screenCode/wordle.png"),
-  FriendlySport: require("../assets/projectsImage/fs-feed.png"),
+  FriendlySport: "/images/friendlySport/fs-feed.png",
   Gameboy: require("../assets/projectsImage/gameboy_screen.png"),
 };
 

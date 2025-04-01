@@ -1,0 +1,34 @@
+[
+  {
+    "id": "friendlySport",
+    "title": "Friendly Sport: Track, Compete & Stay Motivated",
+    "introduction": "The idea came from a simple habit: my friends and I used to log our workouts in a shared Apple Notes table. At the end of each week, the person who trained the least would deposit 10 euros into a shared account. Every three months, the most consistent member would claim the pot—turning fitness into a fun challenge!",
+    "sections": [
+      {
+        "title": "Feed",
+        "image": "/images/friendlySport/fs-feed.png",
+        "description": "Track your sports sessions with an intuitive calendar. Each friend is assigned a unique color, and dots on specific dates represent their training sessions. You can track up to three friends. View your personal month overview to monitor your progress, or switch to the group view to compare your activity with friends."
+      },
+      {
+        "title": "Rank",
+        "image": "/images/friendlySport/fs-rank.png",
+        "description": "Keep track of your friends' progress with a dynamic ranking system. Each friend earns points based on their training sessions, and the leaderboard updates accordingly. See who is leading the challenge and find out who wins at the end of each period!"
+      },
+      {
+        "title": "Profile",
+        "image": "/images/friendlySport/fs-me.png",
+        "description": "View and manage your personal stats, including height, weight, total points earned, and group affiliation. Keep track of your progress and compare your stats with friends to stay motivated!"
+      },
+      {
+        "title": "Evolution",
+        "image": "/images/friendlySport/fs-evolution.png",
+        "description": "Visualize your progress over time with interactive graphs. Choose different statistics like sessions completed, points earned, or weight changes to track your evolution and stay motivated!"
+      },
+      {
+        "title": "Chat",
+        "image": "/images/friendlySport/fs-chat.png",
+        "description": "Chat with your friends to discuss your progress, share achievements, and stay motivated together. Keep the competitive spirit alive with real-time messaging!"
+      }
+    ]
+  }
+]

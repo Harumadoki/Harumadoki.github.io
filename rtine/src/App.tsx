@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 import About from "./components/About/About";
 import ThreeDimensionalProjects from "./components/ThreeDimensionalProjects/ThreeDimensionalProjects";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Wordle from "./components/Wordle/Wordle";
 import Experience from "./components/Experience/Experience";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 
 const Layout = () => {
   return (
@@ -63,6 +64,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/friendlysport",
+        element: <ProjectDetails experienceId="friendlySport" />,
+      },
+      {
+        path: "*",
+        element: <Navigate to="/home" replace />,
       },
     ],
   },
