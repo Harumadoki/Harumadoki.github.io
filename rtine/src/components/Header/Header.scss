@@ -47,17 +47,42 @@
     font-weight: 600;
   }
 
+  // .link {
+  //   color: white;
+  //   text-decoration: none;
+  //   padding: 5px 10px 5px 10px;
+  //   // font-weight: 600;
+  //   &:hover {
+  //     // background-color: blue;
+  //     text-decoration: underline;
+  //     // border-radius: 1em;
+  //     color: white;
+  //   }
+  // }
+
+  //link animation
   .link {
-    color: white;
+    color: rgb(232, 232, 232);
     text-decoration: none;
-    padding: 5px 10px 5px 10px;
-    // font-weight: 600;
-    &:hover {
-      // background-color: blue;
-      text-decoration: underline;
-      // border-radius: 1em;
-      color: white;
-    }
+    // padding: 5px 10px 5px 10px;
+    position: relative;
+  }
+
+  .link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .link:hover::after {
+    transform: scaleX(1);
   }
 
   .logo-link {
