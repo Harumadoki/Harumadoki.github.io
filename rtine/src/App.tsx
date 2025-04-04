@@ -12,12 +12,14 @@ import Experience from "./components/Experience/Experience";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 import { useEffect, useState } from "react";
 import ProfessionalExperiences from "./components/ProfessionalExperiences/ProfessionalExperiences";
+import Footer from "./components/Footer/Footer";
 
 const Layout = () => {
   return (
     <>
       <Header />
       <Outlet />
+      <Footer />
     </>
   );
 };

@@ -37,7 +37,7 @@ interface AboutProps {}
 
 const SopraResume = () => {
   return (
-    <Link className="card-link" to={"/elengy"}>
+    <Link className="card-link" to={"/professional-experiences"}>
       <div className="resume-section">
         <h3>Sopra Steria</h3>
         <p>
@@ -73,7 +73,7 @@ const SopraResume = () => {
 
 const Omnilog_Resume = () => {
   return (
-    <Link className="card-link" to={"/tf1"}>
+    <Link className="card-link" to={"/professional-experiences"}>
       <div className="resume-section">
         <h3>Omnilog</h3>
         <p>

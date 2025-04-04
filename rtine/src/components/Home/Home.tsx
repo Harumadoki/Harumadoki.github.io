@@ -1,7 +1,6 @@
 import "./Home.scss";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-import Contact from "../Contact/Contact";
 
 const Introduction = () => {
   return (
@@ -38,9 +37,6 @@ const Home = () => {
       <Projects />
       <About />
       <Projects isPersonal={true} />
-      <div className="contact-container">
-        <Contact />
-      </div>
     </>
   );
 };

@@ -12,16 +12,8 @@ const Detail: FC<DetailProps> = ({ tags, title, description }) => {
     <div className="Detail">
       {
         <div className="container">
-          <p className="title">
-            {title}: {description}
-          </p>
-          <div className="tags-container">
-            {tags.map((x) => (
-              <p key={x} className="tag">
-                {x}
-              </p>
-            ))}
-          </div>
+          <p className="title">{title}</p>
+          <div className="go-to-project">See details ➜</div>
         </div>
       }
     </div>

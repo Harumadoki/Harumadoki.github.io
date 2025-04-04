@@ -33,7 +33,7 @@ const Projects: FC<ProjectsProps> = ({ isPersonal }: ProjectsProps) => {
       {isPersonal && <ProjectsIntro />}
       <div className="Projects-grid">
         {projects_list.map((item) => (
-          <Link key={item.title} to={item.lien}>
+          <Link className="project-animation" key={item.title} to={item.lien}>
             <Project obj={item} isPersonal={isPersonal} />
           </Link>
         ))}

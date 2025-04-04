@@ -79,11 +79,8 @@
   align-items: center;
   display: flex;
   .picture {
-    // width: 400px;
-    // width: 90%;
     width: clamp(400px, 40vw, 900px);
     height: auto;
-    border-radius: 50%;
   }
 }
 

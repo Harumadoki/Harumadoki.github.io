@@ -1,0 +1,17 @@
+.footer-container {
+  margin: 2% 1% 1% 1%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 0.8vw;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .social-network {
+    display: flex;
+    gap: 10px;
+  }
+}

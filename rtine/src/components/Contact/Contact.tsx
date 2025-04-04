@@ -12,15 +12,14 @@ const Text = () => {
           <span className="content-secondary">
             Feel free to reach out for collaboration, job opportunities, or just
             to chat about tech and development!
-            <br /> <br />
-            <a href={`mailto:${mail}`}>➜ Email me</a>
-            <br /> <br />
+            <br /> <br />➜ <a href={`mailto:${mail}`}>Email me</a>
+            <br /> <br />➜{" "}
             <a
               href="https://www.linkedin.com/in/heritiana-rasoanaivo-241149158/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              ➜ LinkedIn
+              LinkedIn
             </a>
           </span>
         </p>

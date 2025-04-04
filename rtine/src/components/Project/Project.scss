@@ -4,23 +4,7 @@
   position: relative;
   flex: 1 1 50%;
   max-height: 700px; // À voir pour plus tard (spécifique à mes photos)
-
-  //   img {
-  //     object-fit: cover; // À voir pour plus tard (spécifique à mes photos) => ici crop la photo
-  //   }
 }
-
-// .animationTest {
-//     // animation from bottom to top with opacity@
-//     animation: slide-in 0.5s ease-in-out;
-// }
-
-// @keyframes slide-in {
-//     from {
-//         opacity: 0;
-//         transform: translateY(100%);
-//     }
-// }
 
 .image {
   width: 100%;
