@@ -27,23 +27,17 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1%;
-      // color: black;
-      // background-color: white;
       .description {
         padding: 2%;
         text-align: justify;
         background-color: rgba(208, 206, 206, 0.493);
         border-radius: 10px;
         h3 {
-          //   font-size: 3vw;
           font-size: 2rem;
         }
 
         p {
-          //   font-size: 1.5vw;
           font-size: clamp(18px, 1.8vw, 25px);
-          // color: rgb(138, 138, 138);
-          // color: black;
           color: rgb(126, 126, 126);
         }
       }
@@ -55,7 +49,7 @@
     }
     @media (max-width: 1024px) {
       .section {
-        grid-template-columns: 1fr; /* Switch to a single column */
+        grid-template-columns: 1fr;
       }
     }
   }
