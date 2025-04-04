@@ -1,6 +1,7 @@
 import "./Home.scss";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import { useEffect, useState } from "react";
 
 const Introduction = () => {
   return (
@@ -29,8 +30,37 @@ const Introduction = () => {
 };
 
 const Home = () => {
+  const [arrowVisible, setArrowVisible] = useState(false);
+  let timeoutId: ReturnType<typeof setTimeout>;
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setArrowVisible(true);
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => setArrowVisible(false), 1500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   return (
     <>
+      <button
+        className={`arrow-scroll ${arrowVisible ? "arrow-scroll-visible" : ""}`}
+        onClick={() => handleClick()}
+        aria-label="Scroll to top"
+      >
+        ↑
+      </button>
       <div className="introduction-container">
         <Introduction />
       </div>
