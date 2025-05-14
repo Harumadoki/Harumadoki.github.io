@@ -12,7 +12,7 @@ const Introduction = () => {
         in <strong>React, Angular and .NET</strong>.
         <br /> <br />I love building web applications, solving complex problems,
         and working in <strong>Agile teams</strong>. Currently based in{" "}
-        <strong>Abu Dhabi</strong>, I'm always looking for new challenges and
+        <strong>Tokyo</strong>, I'm always looking for new challenges and
         opportunities to grow.
       </p>
       <p>
